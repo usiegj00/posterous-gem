@@ -11,8 +11,7 @@ module Posterous
 
     def default_options
       @default_options ||= { 
-        :username => Posterous.config['username'], 
-        :password => Posterous.config['password']
+        :userpwd => Posterous.config['username']+":"+Posterous.config['password']
       }
     end
 
